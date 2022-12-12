@@ -225,11 +225,6 @@ color: #eee;
     border: 1px solid black;
 }
 
-.galeria-item:nth-child(10){
-    grid-row-start: span 3;
-    border: 1px solid black;
-}
-
 .ft  {
     display: flex;
     align-items: right;
