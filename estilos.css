@@ -1,5 +1,4 @@
 
-
 *{
     box-sizing: border-box; /*toma el relleno y ancho de la pagina*/
     margin: 0;  /*margen 0*/
@@ -11,7 +10,6 @@
     background-color: rgb(255, 188, 62); /*color de fondo*/
     width: 100%; /*ancho del fondo*/
 }
-
 html{
 
     scroll-behavior: smooth; /*animacion suaave del scroll*/
@@ -95,6 +93,15 @@ font-size: 17px; /*tamaño de letra*/
 
 }
 
+/*
+.galeria-contenedor img {
+    transition: transform .75s;
+}
+
+.galeria-item:hover .galeria-imagen {
+    transform: scale(1.15);
+}*/
+
 footer {
 
     background-color:rgb(255, 188, 62); /*color de fondo*/
@@ -121,12 +128,13 @@ footer {
 
 .galeria-contenedor{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-columns: repeat(auto-fill,minmax(10rem,2));
-    grid-auto-rows: 90px;
+    grid-template-columns: repeat(3,1fr);
+    /*grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));*/
+    grid-template-rows: 1em repeat(3    , 1fr);
+    grid-auto-rows: 80px;
     grid-auto-rows: auto;
     padding: 20px;
-    grid-gap: 15px;
+    grid-gap: 20px;
 
 }
 
@@ -154,6 +162,7 @@ footer {
     margin: 0;
     padding: 5px;    
 }
+
 
 .galeria-titulo {
     position: absolute;
